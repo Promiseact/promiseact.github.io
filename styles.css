@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+a:link, a:visited {
+    background-color: #f4fdff;
+    color: black;
+    /* border: 5px solid green; */
+    padding: 10px 20px;
+padding-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: #3881bc;
+    color: white;
+}
+
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: black;
+}
+
+.headingTitle {
+    font-size: 68px;
+    margin: 0;
+    padding: 0;
+}
+
+.bar {
+    background-color: #f4fdff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.menuBar {
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-left: 100px;
+}
+
+.menuBar ul {
+    list-style: none;
+    text-align: right;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menuBar ul li {
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: 15px;
+    background-color: #fff;
+
+}
+
+.menuBar ul li a {
+    font-size: 225%;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar ul ul {
+    position: absolute;
+    top: 100%;
+    display: none;
+}
+
+.navbar ul ul li {
+    display: block;
+}
+
