@@ -84,3 +84,56 @@ body {
     display: block;
 }
 
+.main {
+    margin-top: 115px;
+}
+
+.headingTitle {
+    font-size: 68px;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+.column {
+    float: left;
+    width: 50%;
+    padding: 100px;
+  }
+  
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.inside {
+    width: 590px;
+    display: block;
+    margin-left: 125px;
+    background-color: white;
+    box-shadow: 0 25px 40px 0 rgba(0, 0, 0, 0.2), 0 100px 200px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 50px;
+}
+
+.container {
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 150%;
+}
+
+.side {
+    width: 590px;
+    margin-right: 10px;
+    /* margin-right: 200px; */
+    background-color: white;
+    box-shadow: 0 25px 40px 0 rgba(0, 0, 0, 0.2), 0 100px 200px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 50px;
+}
+
+.main ul {
+    list-style: none;
+}
