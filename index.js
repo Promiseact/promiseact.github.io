@@ -34,7 +34,6 @@ function patregister () {
     return
   }
   if(validate_password(password) == true & validate_email(email) == true){
-    alert('Email and Password are valid!')
   }
  
   // Move on with Auth
@@ -98,8 +97,7 @@ function login () {
     database_ref.child('users/' + user.uid).update(user_data)
 
     // DOne
-    alert('User Logged In!!')
-    window.location.href = "dashboard.html"; // Change to the URL of your dashboard page
+    window.location.href = "./dashboard"; // Change to the URL of your dashboard page
 
   })
   .catch(function(error) {
