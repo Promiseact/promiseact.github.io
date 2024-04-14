@@ -25,16 +25,15 @@ function patregister () {
 
   // Validate input fields
   if (validate_email(email) == false || validate_password(password) == false) {
-    alert('Email or Password is Outta Line!!')
+    alert('Email or Password does not follow proper format!')
     return
     // Don't continue running the code
   }
   if (validate_field(full_name) == false) {
-    alert('One or More Extra Fields is Outta Line!!')
+    alert('Name is missing!')
     return
   }
-  if(validate_password(password) == true & validate_email(email) == true){
-  }
+
  
   // Move on with Auth
   auth.createUserWithEmailAndPassword(email, password)
@@ -56,7 +55,7 @@ function patregister () {
     database_ref.child('users/' + user.uid).set(user_data)
 
     // DOne
-    alert('User Created!!')
+    alert('User Created, you can now login!!')
   })
   .catch(function(error) {
     // Firebase will use this to alert of its errors
@@ -75,7 +74,7 @@ function login () {
 
   // Validate input fields
   if (validate_email(email) == false || validate_password(password) == false) {
-    alert('Email or Password is Outta Line!!')
+    alert('Email or Password is incorrect!')
     return
     // Don't continue running the code
   }
