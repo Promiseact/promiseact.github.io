@@ -96,7 +96,7 @@ function login () {
     database_ref.child('users/' + user.uid).update(user_data)
 
     // DOne
-    window.location.href = "./dashboard"; // Change to the URL of your dashboard page
+    window.location.href = "./dashboard.html"; // Change to the URL of your dashboard page
 
   })
   .catch(function(error) {
