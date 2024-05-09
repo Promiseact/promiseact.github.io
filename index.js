@@ -95,7 +95,7 @@ function login () {
     database_ref.child('users/' + user.uid).update(user_data)
 
  
-    window.location.href = "./dashboard.html"; 
+    window.location.href = "./dashboard"; 
 
   })
   .catch(function(error) {
